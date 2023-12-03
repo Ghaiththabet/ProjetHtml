@@ -4,7 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire de Contact</title>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+        background-color: #333;
+        padding: 1em;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,42 +93,29 @@
     </nav>
 
     <form action="traitement-du-formulaire.php" method="post">
-        <div>
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" required>
-        </div>
-    
-        <div>
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="prenom" required>
-        </div>
-    
-        <div>
-            <label for="adresse">Adresse :</label>
-            <textarea id="adresse" name="adresse" rows="4" required></textarea>
-        </div>
-    
-        <div>
-            <label for="tel">Téléphone :</label>
-            <input type="tel" id="tel" name="tel" required>
-        </div>
-    
-        <div>
-            <label for="email">E-mail :</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-    
-        <div>
-            <label for="facebook">Facebook :</label>
-            <input type="text" id="facebook" name="facebook">
-        </div>
-    
-        <div>
-            <label for="linkedin">LinkedIn :</label>
-            <input type="text" id="linkedin" name="linkedin">
-        </div>
-    
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="adresse">Adresse :</label>
+        <textarea id="adresse" name="adresse" rows="4" required></textarea>
+
+        <label for="tel">Téléphone :</label>
+        <input type="tel" id="tel" name="tel" required>
+
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="facebook">Facebook :</label>
+        <input type="text" id="facebook" name="facebook">
+
+        <label for="linkedin">LinkedIn :</label>
+        <input type="text" id="linkedin" name="linkedin">
+
         <button type="submit">Envoyer</button>
     </form>
 </body>
 </html>
+
